@@ -1,0 +1,19 @@
+// Use Postman to test, first we ned to generate access token
+// Get token: POST url:
+https://vmaz-rkr-app5/uaa/oauth/token
+// Get token: Autorization. Basic Auth 
+// Username=historian_public_rest_api
+// Password=publicapisecret
+// Get token: Body
+// Username=[GE Proficy user with read access]. Password=[Password for GE User]
+
+// Get tags: GET url
+// https://vmaz-rkr-app5/historian-rest-api/v1/tags/
+// Get tags: Autorization
+// Bearer Token-->Paste in the access token from Get token request.
+
+// Get current value: GET url, notice the escape character in the tag name:
+https://vmaz-rkr-app5/historian-rest-api/v1/datapoints/currentvalue?tagNames=0ASQ10CT011%5C_.U
+// Get current value: Autorization
+// Bearer Token-->Paste in the access token from Get token request.
+
