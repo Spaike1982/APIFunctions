@@ -1,0 +1,4 @@
+# Source: https://docs.aveva.com/bundle/sp-historian/page/338478.html
+# Get Delta values:
+Authorization: NTLM with username and password (i.e. windows account)
+GET: http://localhost:32569/historian/v2/ProcessValues?$filter=FQN+eq+'TagName'+and+DateTime+ge+2025-01-23T00:00:00Z+and+DateTime+le+2025-01-24T07:00:00Z&RetrievalMode=Delta
